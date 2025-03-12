@@ -7,7 +7,7 @@ def clahe(img, clip_limit=2.0, grid_size=(8,8)):
 
 #src = cv2.imread("bed.png")
 
-src = cv2.imread("resources/Ceneval.png")
+src = cv2.imread("../resources/Ceneval.png")
 
 # HSV thresholding to get rid of as much background as possible
 hsv = cv2.cvtColor(src.copy(), cv2.COLOR_BGR2HSV)
@@ -51,5 +51,5 @@ for cnt in contours:
 x, y, w, h = brightest_rectangle
 cv2.rectangle(canvas, (x, y), (x+w, y+h), (0, 255, 0), 1)
 cv2.imshow("canvas", canvas)
-cv2.imwrite("resources/result.jpg", canvas)
+cv2.imwrite("../resources/result.jpg", canvas)
 cv2.waitKey(0)

@@ -1,7 +1,7 @@
 import cv2
 import ffmpeg
 
-image = cv2.imread('resources/triangulo.png')
+image = cv2.imread('../resources/triangulo.png')
 height, width = image.shape[:2]
 center = (width/2, height/2)
 frame_size = (height, width)

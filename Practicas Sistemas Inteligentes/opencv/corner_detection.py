@@ -16,7 +16,7 @@ def distance(pt1, pt2):
 
 
 # img = cv.imread('resources/Triangulo.jpg')
-img = cv2.imread('resources/BlobTest.jpg')
+img = cv2.imread('../resources/BlobTest.jpg')
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 # gray = cv2.blur(gray, (3, 3))

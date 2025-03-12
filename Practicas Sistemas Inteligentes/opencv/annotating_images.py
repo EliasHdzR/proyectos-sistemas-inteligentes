@@ -1,7 +1,7 @@
 # Import dependencies
 import cv2
 # Read Images
-img = cv2.imread('resources/dog.jpg')
+img = cv2.imread('../resources/dog.jpg')
 # Display Image
 cv2.imshow('Original Image',img)
 #cv2.waitKey(0)

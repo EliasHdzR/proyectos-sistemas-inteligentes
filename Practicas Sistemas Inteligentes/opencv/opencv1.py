@@ -2,8 +2,8 @@
 import cv2
  
 # The function cv2.imread() is used to read an image.
-img_grayscale = cv2.imread('resources/test.jpg',0)
-img_color = cv2.imread('resources/test.jpg')
+img_grayscale = cv2.imread('../resources/test.jpg', 0)
+img_color = cv2.imread('../resources/test.jpg')
  
 # The function cv2.imshow() is used to display an image in a window.
 cv2.imshow('graycsale image',img_grayscale)

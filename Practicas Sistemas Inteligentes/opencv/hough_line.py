@@ -14,7 +14,7 @@ import numpy as np
 # which operations are to be done.
 # Make sure that the image is in the same
 # directory in which this python program is
-img = cv2.imread('resources/sudoku.jpg')
+img = cv2.imread('../resources/sudoku.jpg')
 # img = cv2.imread('resources/Letras1.png')
 
 

@@ -3,7 +3,7 @@ import numpy as np
 
 # Read image.
 #img = cv2.imread('eyes.jpg', cv2.IMREAD_COLOR)
-img = cv2.imread('resources/BlobTest.jpg')
+img = cv2.imread('../resources/BlobTest.jpg')
 #img = cv2.imread('resources/Letras.jpg')
 # Convert to grayscale.
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

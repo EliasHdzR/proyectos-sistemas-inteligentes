@@ -69,7 +69,7 @@ for i in L:
 print(ResultDF.to_csv("csvs/Resultados.csv", sep = ','))
 print(ResultDF.to_json("csvs/Resultados.json"))
 
-ResultDFNuevo = pd.read_csv("csvs/Resultados.csv")
+ResultDFNuevo = pd.read_csv("../csvs/Resultados.csv")
 print(ResultDFNuevo)
 
 """#Serie = pd.Series([10,20,30])

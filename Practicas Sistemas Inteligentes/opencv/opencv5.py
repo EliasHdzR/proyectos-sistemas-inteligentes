@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img =  cv2.imread("resources/vocho.jpg")
+img =  cv2.imread("../resources/vocho.jpg")
 image_copy = img.copy() 
 imgheight=img.shape[0]
 imgwidth=img.shape[1]
@@ -51,7 +51,7 @@ for y in range(0, imgheight, M):
 
 #Save full image into file directory
 cv2.imshow("Patched Image",img)
-cv2.imwrite("resources/patched.jpg",img)
+cv2.imwrite("../resources/patched.jpg", img)
   
 cv2.waitKey()
 cv2.destroyAllWindows()

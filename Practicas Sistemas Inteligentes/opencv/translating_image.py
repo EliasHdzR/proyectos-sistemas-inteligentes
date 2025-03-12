@@ -2,7 +2,7 @@ import cv2
 import numpy as np
  
 # read the image 
-image = cv2.imread('resources/bote.png')
+image = cv2.imread('../resources/bote.png')
 # get the width and height of the image
 height, width = image.shape[:2]
 	

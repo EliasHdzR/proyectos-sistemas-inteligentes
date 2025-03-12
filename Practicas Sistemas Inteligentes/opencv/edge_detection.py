@@ -1,7 +1,7 @@
 import cv2
 
 # Read the original image
-img = cv2.imread('resources/BlobTest.jpg')
+img = cv2.imread('../resources/BlobTest.jpg')
 # Display original image
 cv2.imshow('Original', img)
 #cv2.waitKey(0)

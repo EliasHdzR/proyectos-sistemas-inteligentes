@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
  
-image = cv2.imread('resources/numeros.jpg',0)
+image = cv2.imread('../resources/numeros.jpg', 0)
  
 # Print error message if image is null
 if image is None:
@@ -61,5 +61,5 @@ cv2.imshow('Original', image)
 #cv2.imshow('bilateral_filter', bilateral_filter)
      
 cv2.waitKey()
-cv2.imwrite('resources/blur_kernel.jpg', img)
+cv2.imwrite('../resources/blur_kernel.jpg', img)
 cv2.destroyAllWindows()

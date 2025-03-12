@@ -3,7 +3,7 @@ import cv2
 import numpy as np
  
 # Read the image using imread function
-image = cv2.imread('resources/vocho.jpg')
+image = cv2.imread('../resources/vocho.jpg')
 print(image.shape)
 cv2.imshow('Original Image', image)
  
@@ -13,7 +13,7 @@ down_height = 100
 down_points = (down_width, down_height)
 resized_down = cv2.resize(image, down_points, interpolation= cv2.INTER_LINEAR)
 print(resized_down.shape)
-cv2.imwrite('resources/vocho_chico.png', resized_down)
+cv2.imwrite('../resources/vocho_chico.png', resized_down)
 
 # let's downscale the image using new  width and height
 down_width = 1024
@@ -21,7 +21,7 @@ down_height = 353
 down_points = (down_width, down_height)
 resized_down2 = cv2.resize(resized_down, down_points, interpolation= cv2.INTER_LINEAR)
 print(resized_down.shape)
-cv2.imwrite('resources/vocho_chico2.png', resized_down2)
+cv2.imwrite('../resources/vocho_chico2.png', resized_down2)
  
 # let's upscale the image using new  width and height
 up_width = 600
