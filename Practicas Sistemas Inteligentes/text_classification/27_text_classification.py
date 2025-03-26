@@ -221,6 +221,26 @@ class Pool(object):
             res += (dc, intersection_ratio)
         return res
 
+path_learn = "../resources/learn"
+path_test = "../resources/test"
+
+classes = ["clinton", "lawyer", "math", "medical", "music", "sex"]
+results = []
+
+for dclass in classes:
+    dir = os.listdir(path_learn + "/" + dclass)
+    counter = 0
+    for file in dir:
+        counter+=1
+
+    dir = os.listdir(path_test + "/" + dclass)
+    for file in dir:
+        counter+=1
+
+    results.append([dclass, counter])
+
+print(results)
+
 DClasses = ["clinton", "lawyer", "math", "medical", "music", "sex"]
 
 base = "../resources/learn/"
@@ -235,5 +255,8 @@ for dclass in DClasses:
     for file in dir:
         res = p.Probability(base + dclass + "/" + file)
         results.append(f"{dclass}: {file}: {str(res)}")
+        print("------------------------------------------------------------")
+        print(file)
+        print(res)
 
-print(results[:10])
+#print(results[:10])
